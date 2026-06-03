@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #e8f5e9, #f5f7fa);
+  color: #212121;
+}
+
+/* App container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Card UI */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  background: #2E7D32;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1B5E20;
+}
+
+/* Input fields */
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1B5E20;
+}
+
+/* Highlight (best market) */
+.highlight {
+  background: #fff3e0;
+  border-left: 5px solid #FF9800;
+  padding: 10px;
+  border-radius: 8px;
+}

@@ -1,0 +1,29 @@
+state,district,market,commodity,variety,grade,arrival_date,min_price,max_price,modal_price
+Andhra Pradesh,West Godavari,Eluru APMC,Lemon,Lemon,Local,18/04/2026,6000,15700,10800
+Andhra Pradesh,West Godavari,Chintalapudi APMC,Lemon,Lemon,FAQ,18/04/2026,8500,9500,9000
+Andhra Pradesh,East Godavari,Jaggampet APMC,Paddy(Common),Common,FAQ,18/04/2026,2369,2379,2379
+Andhra Pradesh,East Godavari,Ravulapelem APMC,Banana,Karpura,Local,18/04/2026,1900,2900,2700
+Andhra Pradesh,East Godavari,Ravulapelem APMC,Banana,Bhushavali(Pacha),Local,18/04/2026,1400,1900,1700
+Andhra Pradesh,East Godavari,Ambajipeta APMC,Banana,Banana - Ripe,Medium,18/04/2026,800,1840,1320
+Andhra Pradesh,East Godavari,Ravulapelem APMC,Banana,Amruthapani,Local,18/04/2026,2500,3400,2900
+Tripura,West District,Champaknagar APMC,Cowpea(Veg),Cowpea (Veg),FAQ,18/04/2026,5500,6000,5700
+Tripura,West District,Mohanpur APMC,Sweet Potato,Sweet Potato,Local,18/04/2026,1900,2100,2000
+Tripura,West District,Champaknagar APMC,Green Chilli,Green Chilly,FAQ,18/04/2026,9500,11000,10000
+Andhra Pradesh,Guntur,Tenali APMC,Lemon,Lemon,Grade A,18/04/2026,9000,15200,11000
+Andhra Pradesh,Kurnool,Kurnool APMC,Bengal Gram(Gram)(Whole),Desi (Whole),Local,18/04/2026,3609,5340,5070
+Andhra Pradesh,Kurnool,Kurnool APMC,Castor Seed,Castor seed,Local,18/04/2026,5090,6091,5869
+Andhra Pradesh,Kurnool,Kurnool APMC,Black Gram(Urd Beans)(Whole),Black Gram (Whole),Local,18/04/2026,1100,7697,6580
+Andhra Pradesh,Kurnool,Kurnool APMC,Maize,Local,Local,18/04/2026,1409,1752,1592
+Andhra Pradesh,Kurnool,Kurnool APMC,Arhar(Tur/Red Gram)(Whole),Local,Local,18/04/2026,2970,7549,6170
+Andhra Pradesh,Kurnool,Adoni APMC,Castor Seed,Castor seed,FAQ,18/04/2026,5797,6016,5920
+Andhra Pradesh,Kurnool,Kurnool APMC,Groundnut,Bold Kernel,Local,18/04/2026,4222,6889,5889
+Andhra Pradesh,Kurnool,Kurnool APMC,Sunflower/Sunflower Seed,Local,Local,18/04/2026,4369,4529,4529
+Andhra Pradesh,Kurnool,Adoni APMC,Cotton,Bramha,FAQ,18/04/2026,4399,8989,8659
+Andhra Pradesh,Kurnool,Adoni APMC,Groundnut,Local,FAQ,18/04/2026,4066,7537,7069
+Andhra Pradesh,Nellore,Atmakur(SPS) APMC,Paddy(Common),Nellore Sanna,FAQ,18/04/2026,2300,2400,2369
+Andhra Pradesh,Nellore,Sarvepalli APMC,Lime,Lime,Grade A,18/04/2026,10000,15000,13000
+Andhra Pradesh,Nellore,Rapur APMC,Paddy(Common),Common,Local,18/04/2026,2380,2460,2420
+Andhra Pradesh,Anantapur,Anantapur APMC,Mousambi(Sweet Lime),Mousambi,Grade B,18/04/2026,1000,2900,2000
+Andhra Pradesh,Visakhapatnam,Anakapally APMC,Gur(Jaggery),Anakapalli,Grade Range-3,18/04/2026,4050,4050,4050
+Andhra Pradesh,Visakhapatnam,Anakapally APMC,Gur(Jaggery),Anakapalli,Grade Range-2,18/04/2026,4210,4770,4490
+Andhra Pradesh,Visakhapatnam,Anakapally APMC,Gur(Jaggery),Anakapalli,Grade Range-1,18/04/2026,4690,5090,4890

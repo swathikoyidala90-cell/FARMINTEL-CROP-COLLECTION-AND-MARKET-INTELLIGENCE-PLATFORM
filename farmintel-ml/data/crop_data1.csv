@@ -1,0 +1,119 @@
+state,district,market,commodity,min_price,max_price,modal_price,arrival_date
+Andhra Pradesh,Chittoor,Madanapalle,Tomato,800,1600,1200,2025-03-01
+Andhra Pradesh,Chittoor,Palamaner,Tomato,700,1500,1100,2025-03-01
+Andhra Pradesh,Chittoor,Tirupati,Tomato,850,1700,1250,2025-03-01
+Andhra Pradesh,Kurnool,Kurnool,Tomato,600,1400,1000,2025-03-01
+Andhra Pradesh,Kurnool,Adoni,Tomato,580,1380,980,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Tomato,750,1550,1150,2025-03-01
+Andhra Pradesh,Guntur,Narasaraopet,Tomato,720,1520,1120,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Tomato,900,1700,1300,2025-03-01
+Andhra Pradesh,Krishna,Machilipatnam,Tomato,870,1670,1270,2025-03-01
+Andhra Pradesh,East Godavari,Rajahmundry,Tomato,850,1650,1250,2025-03-01
+Andhra Pradesh,East Godavari,Amalapuram,Tomato,800,1600,1200,2025-03-01
+Andhra Pradesh,West Godavari,Eluru,Tomato,700,1450,1050,2025-03-01
+Andhra Pradesh,Prakasam,Ongole,Tomato,650,1350,950,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Tomato,800,1600,1200,2025-03-01
+Andhra Pradesh,Visakhapatnam,Visakhapatnam,Tomato,900,1800,1400,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Rice,1800,2400,2100,2025-03-01
+Andhra Pradesh,Krishna,Machilipatnam,Rice,1780,2380,2080,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Rice,1750,2350,2050,2025-03-01
+Andhra Pradesh,Guntur,Narasaraopet,Rice,1720,2320,2020,2025-03-01
+Andhra Pradesh,West Godavari,Eluru,Rice,1900,2500,2200,2025-03-01
+Andhra Pradesh,West Godavari,Bhimavaram,Rice,1880,2480,2180,2025-03-01
+Andhra Pradesh,East Godavari,Rajahmundry,Rice,1850,2450,2150,2025-03-01
+Andhra Pradesh,East Godavari,Kakinada,Rice,1870,2470,2170,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Rice,1700,2300,2000,2025-03-01
+Andhra Pradesh,Nellore,Kavali,Rice,1680,2280,1980,2025-03-01
+Andhra Pradesh,Kurnool,Kurnool,Rice,1650,2250,1950,2025-03-01
+Andhra Pradesh,Prakasam,Ongole,Rice,1800,2400,2100,2025-03-01
+Andhra Pradesh,Visakhapatnam,Visakhapatnam,Rice,1900,2500,2200,2025-03-01
+Andhra Pradesh,Srikakulam,Srikakulam,Rice,1820,2420,2120,2025-03-01
+Andhra Pradesh,Vizianagaram,Vizianagaram,Rice,1840,2440,2140,2025-03-01
+Andhra Pradesh,Kurnool,Kurnool,Onion,500,1200,850,2025-03-01
+Andhra Pradesh,Kurnool,Adoni,Onion,480,1180,830,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Onion,550,1250,900,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Onion,600,1300,950,2025-03-01
+Andhra Pradesh,Chittoor,Madanapalle,Onion,480,1150,820,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Onion,520,1200,860,2025-03-01
+Andhra Pradesh,Prakasam,Ongole,Onion,490,1100,800,2025-03-01
+Andhra Pradesh,East Godavari,Rajahmundry,Onion,560,1260,910,2025-03-01
+Andhra Pradesh,Visakhapatnam,Visakhapatnam,Onion,610,1310,960,2025-03-01
+Andhra Pradesh,Srikakulam,Srikakulam,Onion,470,1170,810,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Chilli,4000,8000,6000,2025-03-01
+Andhra Pradesh,Guntur,Narasaraopet,Chilli,3800,7800,5800,2025-03-01
+Andhra Pradesh,Guntur,Sattenapalle,Chilli,3900,7900,5900,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Chilli,4200,8200,6200,2025-03-01
+Andhra Pradesh,Prakasam,Ongole,Chilli,3900,7900,5900,2025-03-01
+Andhra Pradesh,Kurnool,Kurnool,Chilli,3700,7700,5700,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Chilli,4100,8100,6100,2025-03-01
+Andhra Pradesh,East Godavari,Rajahmundry,Chilli,4000,8000,6000,2025-03-01
+Andhra Pradesh,Chittoor,Madanapalle,Chilli,3850,7850,5850,2025-03-01
+Andhra Pradesh,Visakhapatnam,Visakhapatnam,Chilli,4300,8300,6300,2025-03-01
+Andhra Pradesh,Kurnool,Kurnool,Groundnut,4500,6000,5200,2025-03-01
+Andhra Pradesh,Kurnool,Adoni,Groundnut,4450,5950,5150,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Groundnut,4600,6100,5300,2025-03-01
+Andhra Pradesh,Prakasam,Ongole,Groundnut,4400,5900,5100,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Groundnut,4550,6050,5250,2025-03-01
+Andhra Pradesh,Chittoor,Madanapalle,Groundnut,4700,6200,5400,2025-03-01
+Andhra Pradesh,Anantapur,Anantapur,Groundnut,4650,6150,5350,2025-03-01
+Andhra Pradesh,Anantapur,Guntakal,Groundnut,4480,5980,5180,2025-03-01
+Andhra Pradesh,Anantapur,Tadipatri,Groundnut,4520,6020,5220,2025-03-01
+Andhra Pradesh,Visakhapatnam,Visakhapatnam,Groundnut,4750,6250,5450,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Banana,600,1400,1000,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Banana,550,1350,950,2025-03-01
+Andhra Pradesh,East Godavari,Rajahmundry,Banana,700,1500,1100,2025-03-01
+Andhra Pradesh,West Godavari,Eluru,Banana,650,1450,1050,2025-03-01
+Andhra Pradesh,West Godavari,Bhimavaram,Banana,680,1480,1080,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Banana,580,1380,980,2025-03-01
+Andhra Pradesh,Visakhapatnam,Visakhapatnam,Banana,720,1520,1120,2025-03-01
+Andhra Pradesh,Chittoor,Tirupati,Banana,640,1440,1040,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Cotton,5500,7000,6200,2025-03-01
+Andhra Pradesh,Kurnool,Kurnool,Cotton,5400,6900,6100,2025-03-01
+Andhra Pradesh,Anantapur,Anantapur,Cotton,5300,6800,6000,2025-03-01
+Andhra Pradesh,Prakasam,Ongole,Cotton,5600,7100,6300,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Cotton,5700,7200,6400,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Cotton,5450,6950,6150,2025-03-01
+Andhra Pradesh,Chittoor,Madanapalle,Cotton,5350,6850,6050,2025-03-01
+Andhra Pradesh,Visakhapatnam,Visakhapatnam,Cotton,5800,7300,6500,2025-03-01
+Andhra Pradesh,Kurnool,Kurnool,Maize,1200,1800,1500,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Maize,1250,1850,1550,2025-03-01
+Andhra Pradesh,Anantapur,Anantapur,Maize,1150,1750,1450,2025-03-01
+Andhra Pradesh,Prakasam,Ongole,Maize,1220,1820,1520,2025-03-01
+Andhra Pradesh,East Godavari,Rajahmundry,Maize,1280,1880,1580,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Maize,1300,1900,1600,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Maize,1180,1780,1480,2025-03-01
+Andhra Pradesh,Visakhapatnam,Visakhapatnam,Maize,1320,1920,1620,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Mango,1500,4000,2500,2025-03-01
+Andhra Pradesh,East Godavari,Rajahmundry,Mango,1400,3800,2400,2025-03-01
+Andhra Pradesh,West Godavari,Eluru,Mango,1600,4200,2600,2025-03-01
+Andhra Pradesh,Chittoor,Madanapalle,Mango,2000,5000,3200,2025-03-01
+Andhra Pradesh,Visakhapatnam,Visakhapatnam,Mango,1800,4500,2800,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Mango,1700,4300,2700,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Mango,1550,4100,2550,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Turmeric,6000,9000,7500,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Turmeric,6200,9200,7700,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Turmeric,5900,8900,7400,2025-03-01
+Andhra Pradesh,Kurnool,Kurnool,Turmeric,5800,8800,7300,2025-03-01
+Andhra Pradesh,East Godavari,Rajahmundry,Turmeric,6100,9100,7600,2025-03-01
+Andhra Pradesh,Prakasam,Ongole,Turmeric,5950,8950,7450,2025-03-01
+Andhra Pradesh,Visakhapatnam,Visakhapatnam,Turmeric,6300,9300,7800,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Sugarcane,280,350,310,2025-03-01
+Andhra Pradesh,West Godavari,Eluru,Sugarcane,270,340,300,2025-03-01
+Andhra Pradesh,East Godavari,Rajahmundry,Sugarcane,275,345,305,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Sugarcane,285,355,315,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Sugarcane,265,335,295,2025-03-01
+Andhra Pradesh,Chittoor,Madanapalle,Potato,600,1200,900,2025-03-01
+Andhra Pradesh,Kurnool,Kurnool,Potato,550,1150,850,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Potato,620,1220,920,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Potato,650,1250,950,2025-03-01
+Andhra Pradesh,Visakhapatnam,Visakhapatnam,Potato,680,1280,980,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Brinjal,300,900,600,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Brinjal,350,950,650,2025-03-01
+Andhra Pradesh,East Godavari,Rajahmundry,Brinjal,320,920,620,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Brinjal,280,880,580,2025-03-01
+Andhra Pradesh,Visakhapatnam,Visakhapatnam,Brinjal,370,970,670,2025-03-01
+Andhra Pradesh,Guntur,Guntur,Bhendi,500,1500,1000,2025-03-01
+Andhra Pradesh,Krishna,Vijayawada,Bhendi,550,1550,1050,2025-03-01
+Andhra Pradesh,East Godavari,Rajahmundry,Bhendi,520,1520,1020,2025-03-01
+Andhra Pradesh,Nellore,Nellore,Bhendi,480,1480,980,2025-03-01
+Andhra Pradesh,Chittoor,Tirupati,Bhendi,560,1560,1060,2025-03-01
