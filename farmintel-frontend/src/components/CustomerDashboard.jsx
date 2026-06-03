@@ -10,6 +10,30 @@ function Toast({ msg }) {
   return <div className="fd-toast">{msg}</div>;
 }
 
+const StarRating = ({ value, onChange, hoverValue = 0, onHover, readOnly = false }) => {
+  const displayValue = hoverValue || value || 0;
+
+  return (
+    <div className={`store-star-row ${readOnly ? "read-only" : ""}`} aria-label={`${displayValue} out of 5 stars`}>
+      {[1, 2, 3, 4, 5].map(star => (
+        <button
+          key={star}
+          type="button"
+          className={star <= displayValue ? "active" : ""}
+          disabled={readOnly}
+          aria-label={`${star} star${star > 1 ? "s" : ""}`}
+          aria-pressed={!readOnly && value === star}
+          onClick={() => onChange?.(star)}
+          onMouseEnter={() => onHover?.(star)}
+          onMouseLeave={() => onHover?.(0)}
+        >
+          ★
+        </button>
+      ))}
+    </div>
+  );
+};
+
 const money = value => `Rs ${Number(value || 0).toLocaleString("en-IN")}`;
 const lineTotal = (crop, quantity) => Number(crop?.price || 0) * Number(quantity || 0);
 const discountAmount = total => Number(total || 0) * 0.05;
@@ -35,6 +59,10 @@ export default function CustomerDashboard({ user, onLogout }) {
   const [paymentModal, setPaymentModal] = useState(null);
   const [paymentMethod, setPaymentMethod] = useState("UPI");
   const [paymentSuccess, setPaymentSuccess] = useState(false);
+  const [ratingModal, setRatingModal] = useState(null);
+  const [selectedRating, setSelectedRating] = useState(0);
+  const [hoverRating, setHoverRating] = useState(0);
+  const [ratingSaving, setRatingSaving] = useState(false);
   const [filters, setFilters] = useState({ search: "", maxPrice: "", minRating: "", sort: "featured" });
   const [profile, setProfile] = useState({
     name: user?.name || "",
@@ -167,6 +195,30 @@ export default function CustomerDashboard({ user, onLogout }) {
     fetchData();
   };
 
+  const openRatingModal = crop => {
+    setRatingModal(crop);
+    setSelectedRating(0);
+    setHoverRating(0);
+  };
+
+  const submitRating = async () => {
+    if (!selectedRating) {
+      showToast("Select stars before submitting");
+      return;
+    }
+    if (!ratingModal) return;
+
+    try {
+      setRatingSaving(true);
+      await rateCrop(ratingModal.id, selectedRating);
+      setRatingModal(null);
+    } catch (error) {
+      showToast(error.message || "Rating failed");
+    } finally {
+      setRatingSaving(false);
+    }
+  };
+
   const confirmPayment = async () => {
     const response = await fetch(`${API}/customer/pay?reservationId=${paymentModal.id}&method=${paymentMethod}`, { method: "POST" });
     if (!response.ok) {
@@ -263,7 +315,12 @@ export default function CustomerDashboard({ user, onLogout }) {
                         <span>{money(crop.price)}/kg</span>
                       </div>
                       <p>{crop.quantity || 0} kg available  Shelf life {crop.shelfLifeDays || "N/A"} days</p>
-                      <p>Rating {crop.avgRating || 0}/5  Farmer {crop.farmer?.name || "Verified farm"}</p>
+                      <div className="store-product-rating">
+                        <StarRating value={Math.round(Number(crop.avgRating || 0))} readOnly />
+                        <span>{Number(crop.avgRating || 0).toFixed(1)}/5</span>
+                        <span>{Number(crop.ratingCount || 0)} rating{Number(crop.ratingCount || 0) === 1 ? "" : "s"}</span>
+                        <span>Farmer {crop.farmer?.name || "Verified farm"}</span>
+                      </div>
                       {priceIntel && (
                         <div className="store-intel">
                           <span>{priceIntel.market}, {priceIntel.district}</span>
@@ -285,18 +342,7 @@ export default function CustomerDashboard({ user, onLogout }) {
                             showToast(error.message || "Reservation failed");
                           }
                         }}>Reserve</button>
-                        <button className="fd-btn-secondary" onClick={async () => {
-                          const rating = cleanQuantity(prompt("Rate this crop from 1 to 5:"));
-                          if (rating < 1 || rating > 5) {
-                            showToast("Rating must be from 1 to 5");
-                            return;
-                          }
-                          try {
-                            await rateCrop(crop.id, rating);
-                          } catch (error) {
-                            showToast(error.message || "Rating failed");
-                          }
-                        }}>Rate</button>
+                        <button className="fd-btn-secondary" onClick={() => openRatingModal(crop)}>Rate</button>
                       </div>
                     </div>
                   </article>
@@ -409,6 +455,30 @@ export default function CustomerDashboard({ user, onLogout }) {
                 <button className="fd-btn-primary" onClick={() => setPaymentModal(null)}>Close</button>
               </>
             )}
+          </div>
+        </div>
+      )}
+
+      {ratingModal && (
+        <div className="store-modal-backdrop">
+          <div className="store-rating-modal">
+            <div>
+              <p className="store-rating-kicker">Rate crop</p>
+              <h3>{ratingModal.name}</h3>
+              <span>{selectedRating ? `${selectedRating} of 5 stars selected` : "Select your rating"}</span>
+            </div>
+            <StarRating
+              value={selectedRating}
+              hoverValue={hoverRating}
+              onChange={setSelectedRating}
+              onHover={setHoverRating}
+            />
+            <div className="store-rating-actions">
+              <button className="fd-btn-secondary" onClick={() => setRatingModal(null)} disabled={ratingSaving}>Cancel</button>
+              <button className="fd-btn-primary" onClick={submitRating} disabled={!selectedRating || ratingSaving}>
+                {ratingSaving ? "Saving..." : "Submit rating"}
+              </button>
+            </div>
           </div>
         </div>
       )}

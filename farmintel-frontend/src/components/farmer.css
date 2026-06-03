@@ -1312,6 +1312,75 @@
   font-size: 12px;
 }
 
+.store-product-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.admin-product-rating {
+  margin: 8px 0;
+}
+
+.store-star-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.store-star-row button {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(245,158,11,0.24);
+  border-radius: 8px;
+  background: rgba(245,158,11,0.08);
+  color: #475569;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s, transform 0.1s;
+}
+
+.store-star-row button:hover,
+.store-star-row button.active {
+  background: rgba(245,158,11,0.16);
+  border-color: rgba(245,158,11,0.52);
+  color: #fbbf24;
+}
+
+.store-star-row button:active {
+  transform: scale(0.94);
+}
+
+.store-star-row button:disabled {
+  cursor: default;
+  transform: none;
+}
+
+.store-star-row.read-only {
+  gap: 1px;
+}
+
+.store-star-row.read-only button {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  color: #475569;
+}
+
+.store-star-row.read-only button.active {
+  color: #fbbf24;
+}
+
 .store-actions {
   display: grid;
   grid-template-columns: 1fr 0.8fr 0.6fr;
@@ -1373,6 +1442,54 @@
   font-family: var(--font-head);
 }
 
+.store-rating-modal {
+  width: min(390px, 100%);
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.38);
+}
+
+.store-rating-modal h3 {
+  font-family: var(--font-head);
+  font-size: 24px;
+  margin: 2px 0 4px;
+}
+
+.store-rating-modal span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.store-rating-kicker {
+  color: #fbbf24;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.store-rating-modal .store-star-row {
+  justify-content: center;
+  padding: 8px 0 4px;
+}
+
+.store-rating-modal .store-star-row button {
+  width: 48px;
+  height: 48px;
+  font-size: 29px;
+}
+
+.store-rating-actions {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 10px;
+}
+
 @media (max-width: 768px) {
   .store-hero,
   .store-toolbar {
@@ -1384,6 +1501,10 @@
   }
 
   .store-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .store-rating-actions {
     grid-template-columns: 1fr;
   }
 

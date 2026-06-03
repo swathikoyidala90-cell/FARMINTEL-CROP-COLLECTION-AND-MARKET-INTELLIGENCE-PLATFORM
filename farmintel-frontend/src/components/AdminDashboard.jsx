@@ -13,6 +13,24 @@ function StatusBadge({ status }) {
   return <span className={`fd-badge ${status}`}>{status}</span>;
 }
 
+function RatingSummary({ rating = 0, count = 0 }) {
+  const roundedRating = Math.round(Number(rating || 0));
+
+  return (
+    <div className="store-product-rating admin-product-rating">
+      <div className="store-star-row read-only" aria-label={`${Number(rating || 0).toFixed(1)} out of 5 stars`}>
+        {[1, 2, 3, 4, 5].map(star => (
+          <button key={star} type="button" className={star <= roundedRating ? "active" : ""} disabled>
+            ★
+          </button>
+        ))}
+      </div>
+      <span>{Number(rating || 0).toFixed(1)}/5</span>
+      <span>{Number(count || 0)} rating{Number(count || 0) === 1 ? "" : "s"}</span>
+    </div>
+  );
+}
+
 const soldAmount = history =>
   Number(history.grossAmount ?? (Number(history.cropPrice || 0) * Number(history.soldQuantity || 0)));
 
@@ -251,6 +269,7 @@ export default function AdminDashboard({ onLogout }) {
                     <div className="fd-card-body">
                       <div className="fd-card-name">{c.name}</div>
                       <div>{c.price}</div>
+                      <RatingSummary rating={c.avgRating} count={c.ratingCount} />
                       <StatusBadge status={c.status} />
                       <div style={{ fontSize: "13px", color: "#64748b", marginTop: "6px" }}> {c.farmer?.name}</div>
                     </div>
