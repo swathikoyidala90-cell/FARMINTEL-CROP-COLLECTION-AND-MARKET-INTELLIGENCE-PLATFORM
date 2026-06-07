@@ -1,0 +1,13 @@
+# React / Vite
+farmintel-frontend/node_modules/
+farmintel-frontend/dist/
+
+# Spring Boot
+project/target/
+*.class
+
+# Python ML
+farmintel-ml/__pycache__/
+farmintel-ml/*.pyc
+farmintel-ml/venv/
+farmintel-ml/.env
