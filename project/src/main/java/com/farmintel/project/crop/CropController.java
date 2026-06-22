@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/crops")
-@CrossOrigin(origins = {"http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:3000", "http://127.0.0.1:3000"})
+@CrossOrigin(origins = {"http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:3000", "http://127.0.0.1:3000","https://farmintel-crop-collection-and-market-intelligence-ab5tyapqt.vercel.app"})
 public class CropController {
 
     @Autowired
