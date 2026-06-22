@@ -1,14 +1,14 @@
-# Use an official OpenJDK runtime as base image
-FROM openjdk:17-jdk-slim
+# Use a supported OpenJDK base image
+FROM eclipse-temurin:17-jdk
 
-# Set working directory inside container
+# Set working directory
 WORKDIR /app
 
-# Copy the built jar file into the container
-COPY target/project-0.0.1-SNAPSHOT.jar app.jar
+# Copy project files
+COPY . .
 
-# Expose the port your Spring Boot app runs on
-EXPOSE 8080
+# Build the app
+RUN ./mvnw clean package -DskipTests
 
-# Run the jar file
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Run the jar
+CMD ["java", "-jar", "target/farmintel-0.0.1-SNAPSHOT.jar"]
